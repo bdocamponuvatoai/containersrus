@@ -1,0 +1,26 @@
+label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  margin-top: 9px;
+  color: #252725;
+  min-width: 0;
+}
+textarea {
+  resize: vertical;
+}
+input,
+select,
+textarea {
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #aeb6a6;
+  padding: 13px 0;
+}

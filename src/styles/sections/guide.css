@@ -1,0 +1,90 @@
+.guide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10%;
+  align-items: center;
+}
+.guide p {
+  color: #63665e;
+  max-width: 450px;
+}
+.toggle {
+  display: flex;
+  gap: 8px;
+  margin: 28px 0;
+}
+.toggle button {
+  padding: 12px 22px;
+  border: 1px solid #bbb;
+  background: transparent;
+  border-radius: 30px;
+}
+.toggle .selected {
+  background: #263d39;
+  color: #fff;
+  border-color: #263d39;
+}
+.guide h3 {
+  font-size: 23px;
+}
+.size-visual {
+  padding: 65px 25px 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.container-model {
+  width: 65%;
+  background: repeating-linear-gradient(
+    90deg,
+    #af3f31 0px,
+    #af3f31 11px,
+    #923326 12px,
+    #c75442 15px
+  );
+  border: 7px solid #9c382c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+  transition: width 0.4s;
+}
+.container-model.long {
+  width: 95%;
+}
+.container-model span {
+  background: #ac3d30;
+  padding: 8px;
+}
+.size-visual p {
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin-top: 40px;
+}
+.size-visual small {
+  font-size: 10px;
+  text-align: center;
+  color: #666;
+  max-width: 330px;
+}
+@media (max-width: 800px) {
+  .guide {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .toggle button {
+    padding: 10px 16px;
+  }
+}
+.size-visual {
+  background: transparent;
+  border: 1px solid #d1d5c9;
+  min-height: 380px;
+}
+.container-model {
+  box-shadow: 14px 20px 30px #18251e24;
+  transform: perspective(750px) rotateY(-19deg);
+  height: 140px;
+}

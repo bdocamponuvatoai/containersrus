@@ -1,0 +1,40 @@
+.moving {
+  color: white;
+  display: grid;
+}
+.moving p {
+  max-width: 470px;
+  color: #d2dcd5;
+  font-size: 14px;
+}
+.moving {
+  background: #262e2b;
+  padding: 75px 6%;
+}
+.moving h2 {
+  font-size: 60px;
+}
+@media (max-width: 1000px) {
+  .moving h2 {
+    font-size: 46px;
+  }
+}
+@media (max-width: 800px) {
+  .moving {
+    padding: 55px 5%;
+  }
+  .moving h2 {
+    font-size: 44px;
+  }
+}
+.moving {
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 55px;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .moving {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

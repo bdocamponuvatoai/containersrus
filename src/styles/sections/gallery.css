@@ -1,0 +1,131 @@
+.possibilities {
+  padding-top: 15px;
+}
+.gallery-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 35px;
+}
+.gallery-heading p {
+  font-size: 13px;
+  color: #62685c;
+}
+.gallery-heading .eyebrow {
+  font-size: 9px;
+}
+.scene-controls {
+  display: flex;
+  gap: 30px;
+  border-bottom: 1px solid #bfc6b7;
+  margin: 35px 0 25px;
+}
+.scene-controls button {
+  padding: 20px 0;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 13px;
+}
+.scene-controls button[aria-pressed="true"] {
+  border-color: #b9382c;
+  color: #b9382c;
+}
+.scene-controls button span {
+  font-size: 10px;
+}
+.scene-display {
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  background: #303b32;
+}
+.scene-display > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.scene-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 30%, #0c211bd9);
+  color: white;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  flex-direction: column;
+  padding: 45px 45px 65px;
+}
+.scene-overlay .eyebrow {
+  font-size: 9px;
+  margin-bottom: 18px;
+}
+.scene-overlay h3 {
+  font-size: 46px;
+  max-width: 650px;
+}
+.scene-overlay a {
+  font-size: 13px;
+  margin-top: 24px;
+  border-bottom: 1px solid #ffffff99;
+  padding-bottom: 8px;
+}
+.concept-tag {
+  position: absolute;
+  bottom: 18px;
+  left: 45px;
+  font-size: 9px;
+  color: #d5ddd4;
+}
+.scene-display img {
+  animation: scene-in 0.5s ease;
+}
+@keyframes scene-in {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 800px) {
+  .gallery-heading {
+    display: block;
+  }
+  .gallery-heading h2 {
+    font-size: 40px;
+  }
+  .scene-controls {
+    gap: 15px;
+    margin-top: 25px;
+  }
+  .scene-controls button {
+    font-size: 11px;
+    gap: 7px;
+    flex: 1;
+  }
+  .scene-controls button span:last-child {
+    display: none;
+  }
+  .scene-display {
+    height: 440px;
+  }
+  .scene-overlay {
+    padding: 24px 24px 70px;
+  }
+  .scene-overlay h3 {
+    font-size: 32px;
+  }
+  .concept-tag {
+    left: 24px;
+    right: 24px;
+    font-size: 8px;
+    line-height: 1.6;
+  }
+  .possibilities {
+    padding-top: 0;
+  }
+}

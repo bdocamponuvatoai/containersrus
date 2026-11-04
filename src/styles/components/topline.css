@@ -1,0 +1,22 @@
+.topline {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .topline a {
+    letter-spacing: 0;
+  }
+}
+.topline {
+  background: #e9e8e2;
+  color: #454941;
+  padding: 9px 4%;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+@media (max-width: 380px) {
+  .topline {
+    font-size: 7px;
+    letter-spacing: 0.3px;
+  }
+}

@@ -1,0 +1,54 @@
+.proof {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid #ddd;
+}
+.proof p {
+  border-right: 1px solid #d4d5cd;
+  padding-left: 35px;
+}
+.proof p:first-child {
+  padding: 0;
+}
+.proof p:last-child {
+  border: 0;
+}
+.proof strong {
+  display: block;
+  font-weight: 500;
+}
+.proof span {
+  color: #71736a;
+}
+@media (max-width: 800px) {
+  .proof {
+    gap: 15px;
+  }
+  .proof p {
+    padding: 0;
+    border: 0;
+  }
+}
+.proof {
+  margin: 0 4%;
+  padding: 24px 0;
+}
+.proof strong {
+  font-size: 20px;
+  letter-spacing: -0.5px;
+}
+.proof span {
+  font-size: 11px;
+}
+@media (max-width: 800px) {
+  .proof {
+    margin: 0 5%;
+    padding: 18px 0;
+  }
+  .proof strong {
+    font-size: 15px;
+  }
+  .proof span {
+    font-size: 9px;
+  }
+}

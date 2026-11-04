@@ -1,0 +1,32 @@
+.faq {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 10%;
+}
+details {
+  border-bottom: 1px solid #cdd0c5;
+  padding: 22px 0;
+}
+summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+details p {
+  font-size: 14px;
+  color: #62665b;
+}
+details[open] summary span {
+  transform: rotate(45deg);
+}
+@media (max-width: 800px) {
+  .faq {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
+.faq {
+  background: #eaeae3;
+}

@@ -1,0 +1,64 @@
+.story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 5% 90px;
+}
+.story img {
+  object-fit: cover;
+  width: 100%;
+}
+.story p {
+  color: #64665e;
+  font-size: 14px;
+}
+.story ol {
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+.story li {
+  counter-increment: step;
+  padding: 20px 0 20px 45px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+.story li:before {
+  content: "0" counter(step);
+  position: absolute;
+  left: 0;
+  color: #b83b30;
+  font-size: 12px;
+}
+.story li b {
+  font-size: 14px;
+  font-weight: 500;
+}
+.story li span {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-top: 8px;
+}
+@media (max-width: 800px) {
+  .story {
+    grid-template-columns: 1fr;
+  }
+}
+.story {
+  gap: 8%;
+  align-items: center;
+}
+.story img {
+  height: 550px;
+}
+.story > div {
+  padding: 0;
+}
+@media (max-width: 800px) {
+  .story {
+    padding: 0 5% 60px;
+  }
+  .story img {
+    height: 350px;
+  }
+}

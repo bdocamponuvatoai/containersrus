@@ -1,0 +1,48 @@
+.section-title {
+  display: grid;
+  gap: 35px;
+  align-items: start;
+}
+.section-title > p:last-child {
+  font-size: 14px;
+  color: #666;
+}
+@media (min-width: 1500px) {
+  main,
+  header,
+  footer,
+  .topline {
+    max-width: 1800px;
+    margin: auto;
+  }
+}
+@media (max-width: 800px) {
+  .section-title h2 {
+    margin-bottom: 20px;
+  }
+}
+.section {
+  padding: 100px 6%;
+}
+.section-title {
+  grid-template-columns: 1fr 2fr 1.15fr;
+}
+.section-title .eyebrow {
+  padding-top: 10px;
+}
+@media (max-width: 1000px) {
+  .section-title {
+    grid-template-columns: 1fr 2fr;
+  }
+  .section-title > p:last-child {
+    grid-column: 2;
+  }
+}
+@media (max-width: 800px) {
+  .section {
+    padding: 65px 5%;
+  }
+  .section-title {
+    display: block;
+  }
+}
